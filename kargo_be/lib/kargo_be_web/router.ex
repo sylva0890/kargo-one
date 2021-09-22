@@ -9,6 +9,7 @@ defmodule KargoBeWeb.Router do
     pipe_through :api
 
     resources "/drivers", DriverController, except: [:new, :edit]
+    resources "/trucks", TruckController, except: [:new, :edit]
   end
 
   # Enables LiveDashboard only for development
