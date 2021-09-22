@@ -22,3 +22,8 @@ mix ecto.setup
 
 Reinitialize database, model and seeds
 mix ecto.reset
+
+
+**Frontend**
+- run npm i
+- run npm start
