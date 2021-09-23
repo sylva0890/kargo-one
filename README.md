@@ -13,6 +13,8 @@ mix ecto.migrate
 Run seeder
 mix run priv/repo/seeds.exs
 
+Serve application
+mix phx.server
 
 First run (get depedency, create database, migrate model, run seeder)
 mix setup
