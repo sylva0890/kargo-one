@@ -49,4 +49,5 @@ defmodule KargoBeWeb.Endpoint do
   plug Plug.Head
   plug Plug.Session, @session_options
   plug KargoBeWeb.Router
+  plug CORSPlug
 end

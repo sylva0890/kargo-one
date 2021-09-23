@@ -12,6 +12,7 @@ defmodule KargoBeWeb.DriverController do
   end
 
   def create(conn, %{"driver" => driver_params}) do
+    driver_params = Map.put(driver_params, "created_at", NaiveDateTime.local_now())
     with {:ok, %Driver{} = driver} <- Drivers.create_driver(driver_params) do
       conn
       |> put_status(:created)
