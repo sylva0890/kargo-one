@@ -25,5 +25,8 @@ mix ecto.reset
 
 
 **Frontend**
+#Install depedency
 - run npm i
+
+#Run App
 - run npm start
