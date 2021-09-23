@@ -3,6 +3,7 @@ defmodule KargoBeWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug CORSPlug, origin: ["http://localhost"]
   end
 
   scope "/api", KargoBeWeb do
